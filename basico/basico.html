@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>titulo de la paguina</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" 
+    href="imagenes\img1.jpg" 
+    type="image/x-icon"> <!--icono-->
+    <style type="text/css"> 
+        table, th , td {border: 1px solid black;}
+        h2, li {color: blueviolet;}
+    </style><!--css es por defecto no hace falta el type="text/css" -->
+</head>
+
+<body background="imagenes\img1.jpg">
+    <script src="script1.js"></script>
+    <script> window.alert("hola")</script>
+    <header style="background-color:blanchedalmond;">
+        <h1>encabezado</h1>
+    </header>
+    <hr> <!-- linea-->
+    <nav style="cursor: help;">
+        <ul>
+            <li>menu con link</li> <!-- lista con link-->
+            <li><a href="https://www.google.com/">link externo</a></li><!--link externo-->
+            <li><a target="_blank" href="https://www.google.com/">link externo pagina nueva</a></li><!--link externo pagina nueva-->
+            <li><a href="#seccion4">link interno</a></li>
+            <li><a target="_blank" href="#seccion4">link interno pagina nueva</a></li>
+        </ul>
+    </nav>
+    <hr> <!-- linea-->
+    <section id="seccion1" style="text-decoration:underline;">
+        <div>
+            <h2>encabezado1</h2>
+            <h3>encabezado2</h3>
+            <h4>encabezado3</h4>
+            <h5>encabezado4</h5>
+            <h6>encabezado5</h6>
+            <p>En la industria automotriz, la reparación de componentes electrónicos se ha convertido
+                en una alternativa eficiente y económica frente a su reemplazo total. <br><!-- salto de linea-->
+                Elementos clave como tacómetros, controles de puertas y sistemas de climatización presentan costos
+                significativamente menores cuando se opta por su restauración. Por ejemplo, la reparación
+                de un tacómetro puede costar entre $100 y $200, en comparación con los $400 que podría
+                implicar su reemplazo, lo que supone un ahorro de hasta el 50%. Este enfoque no solo permite
+                reducir los costos operativos,<span style = "color: rgb(246, 2, 51)">sino que también
+                contribuye a la sostenibilidad al disminuir la generación de residuos electrónicos.
+                </span></p>
+        </div>
+        <div>
+            <h2>encabezado1</h2>
+            <h3>encabezado2</h3>
+            <h4>encabezado3</h4>
+            <h5>encabezado4</h5>
+            <h6>encabezado5</h6>
+            <p>En la industria automotriz, la reparación de componentes electrónicos se ha convertido
+                en una alternativa eficiente y económica frente a su reemplazo total. <br><!-- salto de linea-->
+                Elementos clave como tacómetros, controles de puertas y sistemas de climatización presentan costos
+                significativamente menores cuando se opta por su restauración. Por ejemplo, la reparación
+                de un tacómetro puede costar entre $100 y $200, en comparación con los $400 que podría
+                implicar su reemplazo, lo que supone un ahorro de hasta el 50%. Este enfoque no solo permite
+                reducir los costos operativos,<span style = "color: rgb(246, 2, 51)">sino que también
+                contribuye a la sostenibilidad al disminuir la generación de residuos electrónicos.
+                </span></p>
+
+        </div>
+    </section>
+    <hr> <!-- linea-->
+    <section id="seccion2">
+        <h2>menu / lista</h2>
+        <ul>
+            <li>0</li> <!-- lista no ordenada-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ol style="list-style-type: lower-greek;">
+            <li>0</li> <!-- lista ordenada-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <ol style="list-style-type: lower-alpha;">
+                <li>0</li> <!-- lista ordenada-->
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ol>
+        </ol>
+
+    </section>
+    <hr> <!-- linea-->
+    <section id="seccion3">
+        <h2>imagenes</h2>
+        <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg.webp" width="50%">
+        <img src="imagenes\img1.jpg" width="50%">
+    </section>
+    <hr> <!-- linea-->  
+    <form id="seccion4" action="/direccion del servidor" method="post" style="background-color: aquamarine;">
+        <label for="cosa2">lable</label>
+        <input type="text" id="cosa2" placeholder="cosa2" name="cosa2">
+        <br>
+        <label for="cosa6">lable password</label>
+        <input type="password" id="cosa6" Placeholder="cosa6" name="password">
+        <br>
+        <input type="radio" name="ciculo checkbox">
+        <br>
+        <input type="checkbox" name="cuadro checkbox">
+        <br>
+        <input type="file" name="archivo">
+        <br>
+        <input type="button" value="boton input" name="boton2">
+        <br>
+        <button name="boton1 mas completo" type="reset"> boton1</button>
+        <br>
+        <textarea name="texto" id="texto" placeholder="ingresa texto" cols="30" rows="5"></textarea>
+        <br>
+        <input type="submit" value="boton submit/ enviar" name="boton1">
+    </form>
+    <hr> <!-- linea-->
+    <table style="width: fit-content;">
+        <thead>
+            <tr >
+                <th> 1 cosa </th>
+                <th> 2 cosa </th>
+                <th> 3 cosa </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1 elemento</td>
+                <td>2 elemento</td>
+                <td>3 elemento</td>
+            </tr>
+            <tr>
+                <td>1 elemento</td>
+                <td>2 elemento</td>
+                <td>3 elemento</td>
+            </tr>
+            <tr>
+                <td>1 elemento</td>
+                <td>2 elemento</td>
+                <td>3 elemento</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>1 fint</td>
+                <td>2 fint</td>
+                <td>3 fint</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr> <!-- linea-->
+    <footer>
+        <p>&copy; pie de pagina</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+div {
+    background-color:rgba(240, 255, 255, 0.144);
+    width: 50%;
+}
+
+#seccion1{
+
+    display: flex;
+    column-gap: 5%;
+}
+h1{
+
+    color: rgb(64, 0, 255);
+
+}

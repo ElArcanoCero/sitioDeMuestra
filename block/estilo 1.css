@@ -1,0 +1,15 @@
+table, th , td {border: 1px solid black;}/*solo para muestra*/
+h4, h5, h6 {color: rgb(4, 4, 7); } /*solo para muestra*/
+h2, li {color: blueviolet;}
+body {
+    background-color: antiquewhite;
+}
+.box {color: rgb(137, 181, 16);}
+.bold { color: rgb(242, 234, 7);}
+#titulo { color: rgb(218, 21, 21); text-decoration: underline;}
+article.post{color: rgb(236, 8, 167);}
+img {cursor: zoom-in;}
+footer a {text-decoration: overline;
+         color: rgb(18, 177, 225);  
+         }
+
