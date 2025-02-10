@@ -7,6 +7,7 @@
     text-decoration: none;
     list-style: none;
 }
+/*body*/
 body{
     background-color: rgb(73, 76, 243);
     font-family: "Liter", serif;
@@ -17,6 +18,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+/*swiper*/
 .swiper-button-prev::after{
     font-size: 25px;
 }
@@ -36,6 +38,7 @@ body{
 .swiper-pagination-bullet-active{
     background-color: darkred;
 }
+/*menus*/
 .menu{
     position: absolute;
     top: 20px;
@@ -56,12 +59,34 @@ body{
     display: flex;
     align-items: center;
 }
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #d4cdcd;
+    display: block;
+}
+.menu .navbar ul li a:hover{
+    color: red;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+/*logos*/
 .logo-1{
     width: 0;
 }
 .logo-2{
     width: 150px;
 }
+/* socila*/
 .socials{
     display: flex;
 }
@@ -78,16 +103,23 @@ body{
 .social img{
     margin: 8px 0 0 10px;
 }
-.menu .navbar ul li{
-    position: relative;
-    float: left;
+/* header*/
+.header-content{
+    margin-top: 200px;
+    padding-bottom: 50px;
 }
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: #d4cdcd;
-    display: block;
+/*slider*/
+.slider{
+    display: flex;
+    align-items: center;
 }
-.menu .navbar ul li a:hover{
-    color: red;
+.slider-txt{
+    margin-left: 85px;
+    width: 50%;
+}
+.slider-txt h1{
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
 }
