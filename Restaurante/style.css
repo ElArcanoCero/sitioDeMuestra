@@ -9,7 +9,7 @@
 }
 /*body*/
 body{
-    background-color: rgb(73, 76, 243);
+    background-color: black;
     font-family: "Liter", serif;
     font-weight: 400;
     font-style: normal;
@@ -84,7 +84,7 @@ body{
     width: 0;
 }
 .logo-2{
-    width: 150px;
+    width: 230px;
 }
 /* socila*/
 .socials{
@@ -127,6 +127,13 @@ body{
     font-size: 18px;
     color: rgb(155, 154, 154);
 }
+.slider-img{
+    width: 50%;
+}
+.slider-img {
+    margin-right: 20px;
+    width: 50;
+}
 /*botones*/
 .botones{
     margin-top: 50px;
@@ -144,4 +151,10 @@ body{
 }
 .btn-1:hover{
     background-color: red;
+    border: 2px solid red; /* es importante si el fondo es de un color diferente al borde inicial*/
 }
+/*products continer*/
+.products{
+    background-color: rgb(32, 32, 32);
+}
+ /*tabs*/
