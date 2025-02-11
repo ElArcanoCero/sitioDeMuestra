@@ -20,23 +20,19 @@ body{
 }
 /*swiper*/
 .swiper-button-prev::after{
-    font-size: 25px;
+    color: darkred !important; /* Cambiar color */
+    font-size: 30px !important; /* Cambiar tamaño */
 }
-.swiper-button-next::after{
-    font-size: 25px;
-}
-.swiper-button-prev{
-    color: darkred;
-}
-.swiper-button-next{
-    color: darkred;
+.swiper-button-next::after {
+    color: darkred !important; /* Cambiar color */
+    font-size: 30px !important; /* Cambiar tamaño */
 }
 .swiper-pagination-bullet{
-    background-color: #d4cdcd;
-    opacity: 1;
+    background-color: #d4cdcd !important;
+    opacity: 1 !important;
 }
 .swiper-pagination-bullet-active{
-    background-color: darkred;
+    background-color: darkred !important;
 }
 /*menus*/
 .menu{
