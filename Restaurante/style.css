@@ -137,7 +137,7 @@ body{
     margin-right: 20px;
     width: 50%;
 }
-/*botones*/
+/*botones slider*/
 .botones{
     margin-top: 50px;
 }
@@ -156,18 +156,8 @@ body{
     background-color: red;
     border: 2px solid red; /* es importante si el fondo es de un color diferente al borde inicial*/
 }
-.btn-2{
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: red;
-    color: white;
-    font-weight: 800;
-    text-transform: uppercase;
-    border-radius: 50px;
-}
-.btn-2:hover{
-    background-color: rgb(141, 52, 52);
-    /*border: 2px solid red;*/ }
+
+
 /*products continer*/
 .products{
     background-color: rgb(32, 32, 32);
@@ -215,20 +205,20 @@ body{
 .product-txt p{
     color: #d4cdcd;
     font-size: 16px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 .product-txt span{
     color: #d4cdcd;
     font-size: 18px;
     font-weight: 800;
 }
- /*tabs*/
- .tabs{
+/*tabs*/
+.tabs{
     display: flex;
     flex-wrap: wrap;
     padding: 100px 0px;
- }
- .tabs label{
+}
+.tabs label{
     width: 15%;
     order: 1;
     display: block;
@@ -238,7 +228,7 @@ body{
     color: gainsboro;
     font-size: 17px;
     transition: background ease 0.2s;
- }
+}
 .tabs .tab{
     order: 99;
     flex-grow: 1;
@@ -281,6 +271,18 @@ body{
     color: #d4cdcd;
     margin-bottom: 50px;
 }
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.btn-2:hover{
+    background-color: rgb(141, 52, 52);
+    /*border: 2px solid red;*/ }
 /*horario*/
 .horario{
     padding: 100px 0px;
@@ -420,7 +422,7 @@ body{
         padding: 30px;
         flex-direction: column;
     }
-    .info.img{
+    .info-img{
         width: 100%;
         text-align: center;
     }
