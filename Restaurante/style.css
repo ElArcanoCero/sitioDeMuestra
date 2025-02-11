@@ -153,6 +153,18 @@ body{
     background-color: red;
     border: 2px solid red; /* es importante si el fondo es de un color diferente al borde inicial*/
 }
+.btn-2{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+.btn-2:hover{
+    background-color: rgb(141, 52, 52);
+    /*border: 2px solid red;*/ }
 /*products continer*/
 .products{
     background-color: rgb(32, 32, 32);
@@ -176,8 +188,36 @@ body{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
+    border: 2px solid gray;
     border-radius: 10px;
     margin-bottom: 50px;
+}
+.product-img img{
+    width: 150px;
+    height: 120px;
+}
+.product-txt{
+    width: 10px;
+    margin-left: 10px;
+    text-align: left;
+
+}
+.product-txt h4{
+    color: #d4cdcd;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.product-txt p{
+    color: #d4cdcd;
+    font-size: 16px;
+    margin-bottom: 15px; 
+}
+.product-txt span{
+    color: #d4cdcd;
+    font-size: 18px;
+    font-weight: 800;
 }
  /*tabs*/
  .tabs{
@@ -206,7 +246,35 @@ body{
 .tabs input[ type="radio"]{
     display: none;
 }
-.tabs input[type="radio"]{
+.tabs input[type="radio"]:checked + label{
     border-bottom: 2px solid red;
     color: #d4cdcd;
+}
+/*info*/
+.info{
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+}
+.info-img{
+    width: 50%;
+}
+info.img img{
+    width: 500px;
+    height: 250px;
+}
+.info-txt{
+    width: 50%;
+}
+.info-txt h2{
+    font-size: 75px;
+    color: #d4cdcd;
+    font-weight: 800px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.info-txt p{
+    font-size: 18px;
+    color: #d4cdcd;
+    margin-bottom: 50px;
 }
