@@ -278,3 +278,36 @@ info.img img{
     color: #d4cdcd;
     margin-bottom: 50px;
 }
+/*horario*/
+.horario{
+    padding: 100px 0px;
+    background: rgb(29, 29, 29);
+}
+.horario-info h2{
+    font-size: 75px;
+    color: #d4cdcd;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.horario-txt{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*txt*/
+.txt {
+    color: #d4cdcd;
+}
+.txt h4{
+    font-size: 18px;
+    color: #d4cdcd;
+    margin-bottom: 30px;
+}
+.txt p{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px;
+    
+}
