@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Liter&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-.liter-regular {
-    font-family: "Liter", serif;
-    font-weight: 400;
+.playfair-display-leter {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
-}
-
+  }
+  
 /*body*/
 body{
     background-color: black;
