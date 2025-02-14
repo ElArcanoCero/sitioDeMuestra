@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bcryptjs": "^3.0.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.0"
+  },
+  "name": "sitiodemuestra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElArcanoCero/sitioDeMuestra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElArcanoCero/sitioDeMuestra/issues"
+  },
+  "homepage": "https://github.com/ElArcanoCero/sitioDeMuestra#readme",
+  "description": ""
+}
