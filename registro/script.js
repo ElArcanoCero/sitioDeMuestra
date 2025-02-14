@@ -5,7 +5,7 @@ document.getElementById('registroForm').addEventListener('submit', function(even
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    fetch('/register', {
+    fetch('./', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
