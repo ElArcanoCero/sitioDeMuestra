@@ -270,14 +270,15 @@ body{
 .btn-2{
     display: inline-block;
     padding: 15px 35px;
-    background-color: darkred;
+    background-color: black;
     color: white;
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 50px;
+    border: 2px solid darkred;
 }
 .btn-2:hover{
-    background-color: rgb(12, 10, 10);
+    background-color: darkred;
     /*border: 2px solid red;*/ }
 
 /*info-contacto*/
