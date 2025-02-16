@@ -20,10 +20,10 @@ body{
 }
 /*swiper*/
 .swiper-button-prev::after{
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 .swiper-button-next::after {
-    font-size: 30px !important;
+    font-size: 20px !important;
 }
 .swiper-button-prev{
     color: darkred !important;
@@ -250,6 +250,7 @@ body{
 /*info*/
 .info{
     padding: 100px 50px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -279,48 +280,46 @@ body{
     background-color: rgb(12, 10, 10);
     /*border: 2px solid red;*/ }
 
-/*horario*/
-.horario{
-    padding: 100px 0px;
+/*info-contacto*/
+.info-contacto{
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: rgb(29, 29, 29);
 }
-.horario-info h2{
+.info-contacto h2{
     font-size: 75px;
     color: #d4cdcd;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
-.horario-txt{
+.info-contacto-txt{
     display: flex;
     justify-content: space-between;
     
 }
-/*txt*/
-.txt {
-    color: #d4cdcd;
-}
-.txt h4{
+.info-contacto-txt .txt {
     font-size: 18px;
     color: #d4cdcd;
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-contacto-txt .txt h4{    
     margin-bottom: 30px;
 }
-.txt p{
-    font-size: 18px;
-    text-transform: uppercase;
+.info-contacto-txt .txt p{
     font-weight: 600;
     margin-bottom: 15px;
     
 }
-/*mapa*/
-.map{
-    filter: grayscale(80%);
-}
-.map:hover{
-    filter: grayscale(0%) ;
-}
-/*footer*/
 
+/*footer*/
 .links{
     display: flex;
     padding: 100px 0px;
