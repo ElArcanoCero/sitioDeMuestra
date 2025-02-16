@@ -74,11 +74,11 @@ body{
     margin: 0 10px;
     height: 40px;
     width: 40px;
-    border: 1px solid red;
+    border: 1px solid darkred;
     border-radius: 50%;
 }
 .social:hover{
-    background-color: red;
+    background-color: darkred;
 }
 .social img{
     margin: 8px 0 0 10px;
@@ -95,7 +95,7 @@ body{
     display: block;
 }
 .menu .navbar ul li a:hover{
-    color: red;
+    color: darkred;
 }
 #menu{
     display: none;
@@ -140,7 +140,7 @@ body{
 .btn-1{
     display: inline-block;
     padding: 15px 35px;
-    border: 2px solid red;
+    border: 2px solid darkred;
     color: white;
     font-weight: 800;
     letter-spacing: 2px;
@@ -149,8 +149,8 @@ body{
     border-radius: 50px;
 }
 .btn-1:hover{
-    background-color: red;
-    border: 2px solid red; /* es importante si el fondo es de un color diferente al borde inicial*/
+    background-color: darkred;
+    border: 2px solid darkred; /* es importante si el fondo es de un color diferente al borde inicial*/
 }
 .slider-img{
     width: 50%;
@@ -182,6 +182,10 @@ body{
     transition: background ease 0.2s;
     text-transform: capitalize;
 }
+.tabs label:hover{
+    color: darkred;
+}
+
 .tabs .tab{
     order: 99;
     flex-grow: 1;
@@ -193,7 +197,7 @@ body{
     display: none;
 }
 .tabs input[type="radio"]:checked + label{
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid darkred;
     color: #d4cdcd;
 }
 .tabs input[type="radio"]:checked + label + .tab{
@@ -214,13 +218,16 @@ body{
     display: inline-block;
     padding: 5px 7px;
     line-height: 15px;
-    color: #1f048b;
+    color: #d4cdcd;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 2px solid gray;
+    border: 2px solid darkred;
     border-radius: 10px;
     margin-bottom: 50px;
+}
+.product-img h4:hover{
+    background-color: darkred;
 }
 .product-img img{
     width: 150px;
@@ -238,16 +245,6 @@ body{
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 5px;
-}
-.product-txt p{
-    color: #d4cdcd;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.product-txt span{
-    color: #d4cdcd;
-    font-size: 18px;
-    font-weight: 800;
 }
 
 /*info*/
@@ -281,14 +278,14 @@ body{
 .btn-2{
     display: inline-block;
     padding: 15px 35px;
-    background-color: red;
+    background-color: darkred;
     color: white;
     font-weight: 800;
     text-transform: uppercase;
     border-radius: 50px;
 }
 .btn-2:hover{
-    background-color: rgb(141, 52, 52);
+    background-color: darkred;
     /*border: 2px solid red;*/ }
 /*horario*/
 .horario{
