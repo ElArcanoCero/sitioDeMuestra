@@ -249,28 +249,19 @@ body{
 
 /*info*/
 .info{
-    padding: 100px 0px;
-    display: flex;
+    padding: 100px 50px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.info-img{
-    width: 50%;
-}
-.info.img img{
-    width: 500px;
-    height: 250px;
-}
-.info-txt{
-    width: 50%;
-}
-.info-txt h2{
+.info h2{
     font-size: 75px;
     color: #d4cdcd;
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
-.info-txt p{
+.info p{
     font-size: 18px;
     color: #d4cdcd;
     margin-bottom: 50px;
@@ -285,8 +276,9 @@ body{
     border-radius: 50px;
 }
 .btn-2:hover{
-    background-color: darkred;
+    background-color: rgb(12, 10, 10);
     /*border: 2px solid red;*/ }
+
 /*horario*/
 .horario{
     padding: 100px 0px;
