@@ -66,24 +66,6 @@ body{
 .logo-2{
     width: 230px;
 }
-/* socila*/
-.socials{
-    display: flex;
-}
-.social{
-    margin: 0 10px;
-    height: 40px;
-    width: 40px;
-    border: 1px solid darkred;
-    border-radius: 50%;
-}
-.social:hover{
-    background-color: darkred;
-}
-.social img{
-    width: 30px;
-    margin: 8px 0 0 10px;
-}
 /*menus navbar*/
 .menu .navbar ul li{
     position: relative;
@@ -320,6 +302,24 @@ body{
     margin-bottom: 15px;
     
 }
+/* socila*/
+.socials{
+    display: flex;
+}
+.social{
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid darkred;
+    border-radius: 50%;
+}
+.social:hover{
+    background-color: darkred;
+}
+.social img{
+    width: 20px;
+    margin: 10px;
+}
 
 /*footer*/
 .footer{
@@ -460,11 +460,17 @@ body{
         font-weight: 400;
         margin-bottom: 10px;
     }
-    .socials{
-        justify-content: center;
-    }
-    .social img{
-        margin: 7px 0 0 0;
-    }
-    
+    /*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+}
+.footer-txt{
+    color: #d4cdcd;
+    text-transform: initial;
+}
+
 }
