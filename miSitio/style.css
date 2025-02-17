@@ -386,15 +386,13 @@ body{
         font-size: 16px;
     }
     .btn-1{
-        margin-top: 30px;
-    }
-    .btn-1{
         padding: 10px 25px;
         font-size: 14px;
     }
     .slider-img{
         width: 100%;
         text-align: center;
+        /*margin-top: 30px;*/
     }
     .slider-img img{
         margin-right: 0;
@@ -405,6 +403,12 @@ body{
     .swiper-pagination-custom,
     .swiper-pagination-fraction {
         bottom: -7px;
+    }
+    .swiper-button-prev::after{
+        margin-top: 40px;
+    }
+    .swiper-button-next::after{
+        margin-top: 40px;
     }
     .tabs{
         padding: 50px 30px;
