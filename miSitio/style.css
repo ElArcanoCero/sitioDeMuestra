@@ -139,10 +139,13 @@ body{
     width: 50%;
 }
 .slider-img img{
-    margin-right: 225px;
-    width: 550;
+    margin-right: 25px;
+    width: 600px;
 }
-
+.slider-img video{
+    margin-right: 25px;
+    width: 600px;
+}
 /*products continer*/
 .products{
     background-color: rgb(32, 32, 32);
@@ -396,6 +399,10 @@ body{
     }
     .slider-img img{
         margin-right: 0;
+        width: 300px;
+    }
+    .slider-img video{
+        margin-right: 0px;
         width: 300px;
     }
     .swiper-horizontal > .swiper-pagination-bullets,
