@@ -81,6 +81,7 @@ body{
     background-color: darkred;
 }
 .social img{
+    width: 30px;
     margin: 8px 0 0 10px;
 }
 /*menus navbar*/
@@ -311,7 +312,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-.info-contacto-txt .txt h4{    
+.info-contacto-txt .txt h4{
     margin-bottom: 30px;
 }
 .info-contacto-txt .txt p{
@@ -321,23 +322,17 @@ body{
 }
 
 /*footer*/
-.links{
+.footer{
     display: flex;
-    padding: 100px 0px;
-    display: flex;
+    padding: 100px 50px;
     justify-content: space-between;
 }
-.links h4{
+.footer-txt{
     color: #d4cdcd;
-    text-transform: uppercase;
-    margin-bottom: 25px;
+    text-transform: initial;
+    padding: 0px 50px;
 }
-.links ul li a{
-    color: #d4cdcd;
-    font-size: 16px;
-    margin-bottom: 5px;
-    display: inline-block;
-}
+
 /*media*/
 @media (max-width:750px){
     .menu{
@@ -415,55 +410,61 @@ body{
         width: 33%;
     }
     .info{
-        padding: 30px;
+        padding: 50px;
         flex-direction: column;
-    }
-    .info-img{
-        width: 100%;
         text-align: center;
+        width: 80%;
     }
-    .info-img img{
-        display: none;
-        /*width: 400px;
-        height: 200px;
-        margin-bottom: 25px;*/
-    }
-    .info-txt{
-        width: 100%;
-        text-align: center;
-    }
-    .info-txt h2{
+    .info h2{
         font-size: 50px;
     }
-    .info-txt p{
+    .info p{
         font-size: 16px;
     }
     .btn-1{
         font-size: 16px;
     }
-    .horario{
-        padding: 30px;
-        text-align: center;
-    }
-    .horario-info h2{
-        font-size: 50px;
-        margin-bottom: 15px;
-    }
-    .horario-txt{
+    .info-contacto{
+        padding: 80px 50px;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(29, 29, 29);
+    }
+    .info-contacto h2{
+        font-size: 60px;
+        color: #d4cdcd;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .info-contacto-txt{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .info-contacto-txt .txt {
+        font-size: 16px;
+        color: #d4cdcd;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-contacto-txt .txt h4{
+        margin-bottom: 20px;
+    }
+    .info-contacto-txt .txt p{
+        font-weight: 400;
+        margin-bottom: 10px;
     }
     .socials{
         justify-content: center;
     }
     .social img{
-        margin: 8px 0 0 0;
+        margin: 7px 0 0 0;
     }
-    .links{
-        padding: 30px;
-        flex-direction: column;
-        text-align: center;
-    }
-    .links h4{
-        margin: 25px 0px 10px 0px;
-    }
+    
 }
