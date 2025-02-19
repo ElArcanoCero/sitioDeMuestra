@@ -42,3 +42,32 @@ tabInputs.forEach(function(input){
         thisSwiper.swiper.update();
     })
 });
+
+document.querySelectorAll('.navbar ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();  // Evitar el comportamiento predeterminado del enlace
+
+        // Obtiene el id del tab (sin el #)
+        let tabId = this.getAttribute('href').substring(1);
+
+        // Activa el input de radio cuyo valor coincide con el id del tab
+        let tabInput = document.querySelector(`input.tabInput[value="${tabId}"]`);
+        if (tabInput) {
+            tabInput.checked = true;
+        }
+
+        // Desplaza suavemente hacia el contenedor del tab (esto es opcional, según el diseño)
+        let tabContent = document.getElementById(tabId);
+        if (tabContent) {
+            // Define el offset, por ejemplo, el alto del header
+            let headerOffset = 170;  // Ajusta este valor según el alto de tu header
+            let elementPosition = tabContent.getBoundingClientRect().top;
+            let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+            
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
