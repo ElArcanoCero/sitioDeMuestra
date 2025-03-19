@@ -71,3 +71,16 @@ document.querySelectorAll('.navbar ul li a').forEach(anchor => {
         }
     });
 });
+function toggleText() {
+    const infoText = document.querySelector('.info-text');
+    const toggleBtn = document.querySelector('.toggle-btn');
+    
+    // Cambia entre clases para expandir o contraer el texto
+    if (infoText.classList.contains('expanded')) {
+        infoText.classList.remove('expanded');
+        toggleBtn.textContent = 'Mostrar más';  // Cambia el texto del botón
+    } else {
+        infoText.classList.add('expanded');
+        toggleBtn.textContent = 'Mostrar menos';
+    }
+}

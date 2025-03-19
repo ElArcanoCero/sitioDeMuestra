@@ -257,12 +257,12 @@ body{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    line-clamp: 4;
+    line-clamp: 4; /* limita cuantas lineas de texto son visibles*/
     font-size: 18px;
     color: #d4cdcd;
     margin-bottom: 50px;
 }
-.btn-2{
+.toggle-btn{
     display: inline-block;
     padding: 15px 35px;
     background-color: black;
@@ -272,10 +272,13 @@ body{
     border-radius: 50px;
     border: 2px solid darkred;
 }
-.btn-2:hover{
+.toggle-btn:hover{
     background-color: darkred;
     /*border: 2px solid red;*/ }
-
+.info p.expanded {
+    -webkit-line-clamp: unset;  /* Elimina el límite de líneas cuando está expandido */
+    line-clamp: unset;
+}
 /*info-contacto*/
 .info-contacto{
     padding: 100px 50px;
@@ -342,6 +345,11 @@ body{
     color: #d4cdcd;
     text-transform: initial;
     padding: 0px 50px;
+}
+.footer img{
+    padding: 15px 50px;
+    height: 40px;
+    width: 40px;
 }
 
 /*media*/
