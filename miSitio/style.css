@@ -148,7 +148,7 @@ body{
 }
 /*products continer*/
 .products{
-    background-color: rgb(32, 32, 32);
+    background-color: #1c1a1a;
 }
 /*tabs*/
 .tabs{
@@ -282,7 +282,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(29, 29, 29);
+    background: #1c1a1a;
 }
 .info-contacto h2{
     font-size: 75px;
