@@ -342,7 +342,7 @@ body{
 }
 
 /*media*/
-@media (max-width:750px){
+@media (max-width:768px){
     .menu{
         padding: 20px;
         justify-content: space-between;
