@@ -71,6 +71,7 @@ document.querySelectorAll('.navbar ul li a').forEach(anchor => {
         }
     });
 });
+// funcion mostrar mas
 function toggleText() {
     const infoText = document.querySelector('.info-text');
     const toggleBtn = document.querySelector('.toggle-btn');

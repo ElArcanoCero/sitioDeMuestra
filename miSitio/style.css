@@ -251,6 +251,10 @@ body{
     color: #d4cdcd;
     margin-bottom: 50px;
 }
+.info p.expanded { /* funcion ver mas */
+    -webkit-line-clamp: unset;  /* Elimina el límite de líneas cuando está expandido */
+    line-clamp: unset;
+}
 .toggle-btn{
     display: inline-block;
     padding: 15px 35px;
@@ -263,10 +267,7 @@ body{
 }
 .toggle-btn:hover{
     background-color: darkred;
-    /*border: 2px solid red;*/ }
-.info p.expanded {
-    -webkit-line-clamp: unset;  /* Elimina el límite de líneas cuando está expandido */
-    line-clamp: unset;
+    /*border: 2px solid red;*/
 }
 /*info-contacto*/
 .info-contacto{
