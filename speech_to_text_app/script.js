@@ -28,7 +28,7 @@ if ('webkitSpeechRecognition' in window) {
         if (!isRecognizing) {
             recognition.start();
             startButton.textContent = 'Detener';
-            output.textContent = 'Escuchando...';
+            //output.textContent = 'Escuchando...';
         } else {
             recognition.stop();
             startButton.textContent = 'Iniciar';
