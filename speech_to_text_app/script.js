@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 
 let recognition;
 let isRecognizing = false;
-let recognizedText = '';
+let texto = '';
 
 if ('webkitSpeechRecognition' in window) {
     recognition = new webkitSpeechRecognition();
