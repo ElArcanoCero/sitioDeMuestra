@@ -1,10 +1,9 @@
-// script.js
-
 const startButton = document.getElementById('startButton');
-const stopButton = document.getElementById('stopButton');
 const output = document.getElementById('output');
 
 let recognition;
+let isRecognizing = false;
+let recognizedText = '';
 
 if ('webkitSpeechRecognition' in window) {
     recognition = new webkitSpeechRecognition();
@@ -17,6 +16,7 @@ if ('webkitSpeechRecognition' in window) {
         for (let i = event.resultIndex; i < event.results.length; i++) {
             transcript += event.results[i][0].transcript;
         }
+        texto = transcript; // Almacenar en variable
         output.textContent = transcript;
     };
 
@@ -25,16 +25,18 @@ if ('webkitSpeechRecognition' in window) {
     };
 
     startButton.onclick = () => {
-        recognition.start();
-        output.textContent = 'Escuchando...';
-    };
-
-    stopButton.onclick = () => {
-        recognition.stop();
+        if (!isRecognizing) {
+            recognition.start();
+            startButton.textContent = 'Detener';
+            output.textContent = 'Escuchando...';
+        } else {
+            recognition.stop();
+            startButton.textContent = 'Iniciar';
+        }
+        isRecognizing = !isRecognizing;
     };
 
 } else {
-    output.textContent = 'La API de reconocimiento de voz no está disponible en este navegador'; // encaso de que no sea crome
+    output.textContent = 'La API de reconocimiento de voz no está disponible en este navegador.';
     startButton.disabled = true;
-    stopButton.disabled = true;
 }
