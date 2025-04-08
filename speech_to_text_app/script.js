@@ -32,6 +32,8 @@ if ('webkitSpeechRecognition' in window) {
         } else {
             recognition.stop();
             startButton.textContent = 'Iniciar';
+            output.textContent = 'Presiona "Iniciar" y comienza a hablar';
+            outputText.textContent = texto
         }
         isRecognizing = !isRecognizing;
     };
