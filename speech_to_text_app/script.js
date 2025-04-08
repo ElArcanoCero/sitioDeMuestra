@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 
 let recognition;
 let isRecognizing = false;
-let texto = '';
+let texto = ''; // variable donde se guardara el text para su uso
 
 if ('webkitSpeechRecognition' in window) {
     recognition = new webkitSpeechRecognition();
@@ -33,7 +33,7 @@ if ('webkitSpeechRecognition' in window) {
             recognition.stop();
             startButton.textContent = 'Iniciar';
             output.textContent = 'Presiona "Iniciar" y comienza a hablar';
-            outputText.textContent = texto
+            outputText.textContent = texto  // texto guardado se muestra en el segundo recuadro
         }
         isRecognizing = !isRecognizing;
     };
