@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento de Voz + Python</title>
+</head>
+<body>
+    <h1>🎤 Transcribe y Envía a Python</h1>
+    <button id="startButton">Iniciar</button>
+    <p id="output">Tu texto aparecerá aquí...</p>
+
+    <script>
+        const startButton = document.getElementById('startButton');
+        const output = document.getElementById('output');
+        let recognition;
+        let isRecognizing = false;
+        let recognizedText = '';
+
+        if ('webkitSpeechRecognition' in window) {
+            recognition = new webkitSpeechRecognition();
+            recognition.continuous = true;
+            recognition.interimResults = true;
+            recognition.lang = 'es-ES';
+
+            recognition.onresult = function(event) {
+                let transcript = '';
+                for (let i = event.resultIndex; i < event.results.length; i++) {
+                    transcript += event.results[i][0].transcript;
+                }
+                recognizedText = transcript;
+                output.textContent = transcript;
+
+                // Enviar a Python cada vez que se actualiza
+                fetch('http://localhost:5000/guardar-texto', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ texto: recognizedText })
+                })
+                .then(response => response.json())
+                .then(data => console.log('Servidor dice:', data))
+                .catch(error => console.error('Error:', error));
+            };
+
+            startButton.onclick = () => {
+                if (!isRecognizing) {
+                    recognition.start();
+                    startButton.textContent = 'Detener';
+                    output.textContent = 'Escuchando...';
+                } else {
+                    recognition.stop();
+                    startButton.textContent = 'Iniciar';
+                }
+                isRecognizing = !isRecognizing;
+            };
+        } else {
+            output.textContent = 'Este navegador no soporta reconocimiento de voz.';
+            startButton.disabled = true;
+        }
+    </script>
+</body>
+</html>
