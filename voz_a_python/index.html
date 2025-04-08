@@ -31,7 +31,7 @@
                 recognizedText = transcript;
                 output.textContent = transcript;
 
-                // Enviar a Python cada vez que se actualiza
+                // Enviar a Python cada vez que se actualiza esto va en js
                 fetch('http://localhost:5000/guardar-texto', {
                     method: 'POST',
                     headers: {
