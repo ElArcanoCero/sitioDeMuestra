@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 
 let recognition;
 let isRecognizing = false;
-let texto = ''; // variable donde se guardara el text para su uso
+let recText = ''; // variable donde se guardara el text para su uso
 
 if ('webkitSpeechRecognition' in window) {
     recognition = new webkitSpeechRecognition();
@@ -16,8 +16,20 @@ if ('webkitSpeechRecognition' in window) {
         for (let i = event.resultIndex; i < event.results.length; i++) {
             transcript += event.results[i][0].transcript;
         }
-        texto = transcript; // Almacenar en variable
+        recText = transcript; // Almacenar en variable
         output.textContent = transcript;
+
+        // Enviar a Python cada vez que se actualiza esto va en js
+        fetch('http://localhost:5000/guardar-texto', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ texto: recText })
+        })
+        .then(response => response.json())
+        .then(data => console.log('Servidor dice:', data))
+        .catch(error => console.error('Error:', error));
     };
 
     recognition.onerror = function(event) {
@@ -33,7 +45,7 @@ if ('webkitSpeechRecognition' in window) {
             recognition.stop();
             startButton.textContent = 'Iniciar';
             output.textContent = 'Presiona "Iniciar" y comienza a hablar';
-            outputText.textContent = texto  // texto guardado se muestra en el segundo recuadro
+            outputText.textContent = recText  // texto guardado se muestra en el segundo recuadro
         }
         isRecognizing = !isRecognizing;
     };
